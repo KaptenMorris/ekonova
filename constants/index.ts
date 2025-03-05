@@ -2,22 +2,22 @@ export const sidebarLinks = [
   {
     imgURL: "/icons/home.svg",
     route: "/",
-    label: "Hem",
+    label: "Home",
   },
   {
     imgURL: "/icons/dollar-circle.svg",
-    route: "/mina-banker",
-    label: "Mina banker",
+    route: "/my-banks",
+    label: "My Banks",
   },
   {
     imgURL: "/icons/transaction.svg",
-    route: "/transaktionshistorik",
-    label: "Transaktionshistorik",
+    route: "/transaction-history",
+    label: "Transaction History",
   },
   {
     imgURL: "/icons/money-send.svg",
-    route: "/overfora-pengar",
-    label: "Överföra pengar",
+    route: "/payment-transfer",
+    label: "Transfer Funds",
   },
 ];
 
