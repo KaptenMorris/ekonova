@@ -10,7 +10,7 @@ const ibmPlexSerif = IBM_Plex_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "Ekonoca",
+  title: "Ekonova",
   description: "Ekonova är en modern bankplattform för alla",
   icons: {
     icon: '/icons/logo.svg',
