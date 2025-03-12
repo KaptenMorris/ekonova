@@ -2,22 +2,22 @@ export const sidebarLinks = [
   {
     imgURL: "/icons/home.svg",
     route: "/",
-    label: "Home",
+    label: "Hem",
   },
   {
     imgURL: "/icons/dollar-circle.svg",
-    route: "/my-banks",
-    label: "My Banks",
+    route: "/mina-banker",
+    label: "Mina Banker",
   },
   {
     imgURL: "/icons/transaction.svg",
-    route: "/transaction-history",
-    label: "Transaction History",
+    route: "/transaktionshistorik",
+    label: "Transaktionshistorik",
   },
   {
     imgURL: "/icons/money-send.svg",
-    route: "/payment-transfer",
-    label: "Transfer Funds",
+    route: "/betalningsöverföring",
+    label: "Överföra pengar",
   },
 ];
 
@@ -126,12 +126,6 @@ export const transactionCategoryStyles = {
     borderColor: "border-[#12B76A]",
     backgroundColor: "bg-[#12B76A]",
     textColor: "text-[#027A48]",
-    chipBackgroundColor: "bg-[#ECFDF3]",
-  },
-  Travel: {
-    borderColor: "border-[#0047AB]",
-    backgroundColor: "bg-blue-500",
-    textColor: "text-blue-700",
     chipBackgroundColor: "bg-[#ECFDF3]",
   },
   default: {

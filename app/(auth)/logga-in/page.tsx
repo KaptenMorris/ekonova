@@ -1,8 +1,7 @@
 import React from 'react'
-
 const LoggaIn = () => {
   return (
-    <div>LoggaIn</div>
+    <h1>Logga in</h1>
   )
 }
 
