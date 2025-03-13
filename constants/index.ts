@@ -16,7 +16,7 @@ export const sidebarLinks = [
   },
   {
     imgURL: "/icons/money-send.svg",
-    route: "/betalningsöverföring",
+    route: "/betalningsoverforing",
     label: "Överföra pengar",
   },
 ];
