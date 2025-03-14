@@ -2,6 +2,7 @@
 import { type ClassValue, clsx } from "clsx";
 import qs from "query-string";
 import { twMerge } from "tailwind-merge";
+import { date, z } from "zod";
 
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
@@ -193,3 +194,19 @@ export const getTransactionStatus = (date: Date) => {
 
   return date > twoDaysAgo ? "Processing" : "Success";
 };
+
+
+export const authFormSchema = (type: string) => z.object({
+  //Registrering
+  firstName:type === 'logga-in' ? z.string().optional() : z.string().min(2, "Fyll i ditt förnamn"),
+  lastName:type === 'logga-in' ? z.string().optional() : z.string().min(2, "Fyll i ditt etternamn"),
+  address1:type === 'logga-in' ? z.string().optional() : z.string().max(50, "Fyll i din adress"),
+  city:type === 'logga-in' ? z.string().optional() : z.string().min(3, "Fyll i vilken stad du bor i"),
+  state:type === 'logga-in' ? z.string().optional() : z.string().min(2).max(20,  "Fyll i vilket län du bor i"),
+  postalCode:type === 'logga-in' ? z.string().optional() : z.string().min(3).max(8, "Fyll i din postnummer"),
+  dateOfBirth:type === 'logga-in' ? z.string().optional() : z.string().min(8, "fyll i ditt födelsedatum"),
+  ssn:type === 'logga-in' ? z.string().optional() : z.string().min(4, "fyll i dina fyra sista siffrorna i ditt personnummer"),
+  // Båda
+  email: z.string().email("Ogiltig e-postadress"),
+  password: z.string().min(8, "Lösenordet måste innehålla minst 8 tecken"),
+});

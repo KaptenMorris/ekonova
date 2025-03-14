@@ -1,9 +1,13 @@
-import React from 'react'
-const Registrera = () => {
+import AuthForm from '@/components/AuthForm'
+
+const Registreara = async() => {
+
+
   return (
-    <div>Registrera</div>
-    
+    <section className='flex-center size-full max-sm:px-6'>
+      <AuthForm type="registrera"/>
+    </section>
   )
 }
 
-export default Registrera
+export default Registreara

@@ -1,7 +1,10 @@
+import AuthForm from '@/components/AuthForm'
 import React from 'react'
 const LoggaIn = () => {
   return (
-    <h1>Logga in</h1>
+    <section className='flex-center size-full max-sm:px-6'>
+      <AuthForm type="logga-in"/>
+    </section>
   )
 }
 
